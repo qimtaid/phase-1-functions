@@ -265,7 +265,7 @@ functions are defined:
 ```javascript
 
 function functionName(parameter1, parameter2, parameter3) {
-  body code goes here
+  // body code goes here
 }
 ```
 
