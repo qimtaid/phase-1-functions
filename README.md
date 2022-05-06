@@ -244,13 +244,15 @@ const result = exerciseDog("Byron", "poodle");
 console.log(result); // => "Byron did not exercise due to rain"
 ```
 
-When the JavaScript engine encounters a `return`statement it "returns" the value
+When the JavaScript engine encounters a `return` statement it "returns" the value
 of the thing that appears to the right of the word. The thing could be a `String`,
 a `Number` or an _expression_ like `1 + 1` (which returns, `2`, sensibly enough).
 
-When a `return` is reached in the code, no further code behavior happens. Above,
-if `weatherToday === "Rainy"` returns `true`, **the only thing that happens** is
-the evaluation and return of the `String` `${dogName} did not exercise due to rain`.
+When a `return` is reached in the code, the `return` will be executed, but if
+there is any code after that point, that code will **not** be executed. In the
+example above, the expression `weatherToday === "Rainy"` returns `true`, so
+**the only thing that happens** is the evaluation and return of the `String`
+`${dogName} did not exercise due to rain`.
 
 Return values can be saved to variables. Or they can be used as inputs to other
 functions.
